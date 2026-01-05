@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-welcome',
   standalone: true,
-  imports: [CommonModule],
+  imports: [FormsModule],
   template: `
     <div class="welcome-screen">
       <h1>Welcome to Conduit!</h1>
