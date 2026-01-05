@@ -30,6 +30,10 @@ export class AppComponent implements OnInit {
   readonly #http = inject(HttpClient);
 
   ngOnInit() {
+     if (!sessionStorage.getItem('visited')) {
+    sessionStorage.setItem('visited', 'true');
+    window.location.href = '/splash';
+  }
     this.preloadEverything();
   }
 

@@ -6,8 +6,23 @@ import SettingComponent from './setting/setting.component';
 import ArticleDetailComponent from './article-detail/article-detail.component';
 import ProfileComponent from './profile/profile.component';
 import HomeComponent from './home/home.component';
+import { SplashComponent } from './splash/splash.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 export const routes: Routes = [
+  { 
+    path: 'splash', 
+    component: SplashComponent 
+  },
+  { 
+    path: 'welcome', 
+    component: WelcomeComponent
+  },
+  { 
+    path: 'newsletter', 
+    component: NewsletterComponent
+  },
   {
     path: 'login',
     component: LoginComponent, 
